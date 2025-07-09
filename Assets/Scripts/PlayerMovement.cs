@@ -3,27 +3,32 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Components")]
-    public Rigidbody playerRB;
+    public Rigidbody2D playerRB;
     public Transform playerBody;
 
     [Header("Movement")]
     public float playerWalkSpd;
     float playerMoveSpd;
 
+    [Header("Physics")]
+    [SerializeField] float playerDragForce;
+
     void Start()
     {
         //assign player components to correct variables
-        playerRB = GetComponent<Rigidbody>();
+        playerRB = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         playerBody = GetComponent<Transform>();
 
         //configure player components properly
-        
+        playerRB.linearDamping = playerDragForce;
     }
 
     void Update()
     {
         //TODO: remove this later
         playerMoveSpd = playerWalkSpd;
+        playerRB.linearDamping = playerDragForce;
+
 
         //Get player inputs
         Vector2 movementDirection = findMovementInput();
@@ -49,8 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void movePlayer(Vector2 moveDir)
     {
-        float xMoveDir = moveDir.normalized.x * playerMoveSpd;
-        float yMoveDir = moveDir.normalized.y * playerMoveSpd;
-        playerBody.position = new Vector3(xMoveDir, yMoveDir, 0);
+        Vector2 moveVector = moveDir.normalized * playerMoveSpd;
+        playerRB.AddForce(moveVector, ForceMode2D.Force);
     }
 }
