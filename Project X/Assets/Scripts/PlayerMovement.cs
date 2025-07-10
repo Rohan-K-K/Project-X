@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //assign player components to correct variables
         playerBody = GetComponent<Transform>();
+        playerRB = GetComponent<Rigidbody>();
 
         //configure player components properly
         playerRB.linearDamping = playerDragForce;
