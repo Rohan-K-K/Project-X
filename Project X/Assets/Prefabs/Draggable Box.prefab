@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7570142465488229226}
   - component: {fileID: 9196888281558205492}
+  - component: {fileID: 2504906725325013073}
   m_Layer: 0
   m_Name: Trigger Box
   m_TagString: Untagged
@@ -47,12 +48,25 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 1.5, z: 1.88}
+  m_Size: {x: 1.4, y: 1.4, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2504906725325013073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032714032293377520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f002925d6517714aacca126b84f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEntered: 0
 --- !u!1 &8117328765255555015
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,6 +80,7 @@ GameObject:
   - component: {fileID: 1744259220181750836}
   - component: {fileID: 3399540517769699758}
   - component: {fileID: 6875844302545083291}
+  - component: {fileID: 5926274136178918420}
   m_Layer: 0
   m_Name: Draggable Box
   m_TagString: Untagged
@@ -171,7 +186,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8117328765255555015}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -190,3 +205,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &5926274136178918420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117328765255555015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742c018b8e606d046b974c4c3979dafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxTransform: {fileID: 0}
+  boxRB: {fileID: 0}
+  boxTrigger: {fileID: 2504906725325013073}
+  boxPushSpd: 0
+  player: {fileID: 0}
+  inputs: {fileID: 0}

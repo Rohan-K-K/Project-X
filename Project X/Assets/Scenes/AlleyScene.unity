@@ -390,6 +390,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773347753}
     m_Modifications:
+    - target: {fileID: 5032714032293377520, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: m_Name
+      value: Trigger Box Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: inputs
+      value: 
+      objectReference: {fileID: 1166930129}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1166930130}
     - target: {fileID: 8117328765255555015, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
       propertyPath: m_Name
       value: Draggable Box Left
@@ -1120,6 +1132,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4947632869377520227, guid: 6ca96cc125ba0b44ab063c400e38d8e2, type: 3}
   m_PrefabInstance: {fileID: 1166930127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1166930129 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9030470937254513124, guid: 6ca96cc125ba0b44ab063c400e38d8e2, type: 3}
+  m_PrefabInstance: {fileID: 1166930127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668819457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b517733df83f6419f462af7a39ab3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1166930130 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4823050378961760325, guid: 6ca96cc125ba0b44ab063c400e38d8e2, type: 3}
+  m_PrefabInstance: {fileID: 1166930127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668819457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4fbe073a8db9d4481f43db0e5b0ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1201340254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1308,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773347753}
     m_Modifications:
+    - target: {fileID: 5032714032293377520, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: m_Name
+      value: Trigger Box Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: inputs
+      value: 
+      objectReference: {fileID: 1166930129}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1166930130}
     - target: {fileID: 8117328765255555015, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
       propertyPath: m_Name
       value: Draggable Box Right
@@ -1623,6 +1669,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773347753}
     m_Modifications:
+    - target: {fileID: 5032714032293377520, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: m_Name
+      value: Trigger Box Mid
+      objectReference: {fileID: 0}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: inputs
+      value: 
+      objectReference: {fileID: 1166930129}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1166930130}
+    - target: {fileID: 5926274136178918420, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: boxTrigger
+      value: 
+      objectReference: {fileID: 4295472081081488545}
     - target: {fileID: 8117328765255555015, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
       propertyPath: m_Name
       value: Draggable Box Mid
@@ -1672,6 +1734,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+--- !u!114 &4295472081081488545 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2504906725325013073, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+  m_PrefabInstance: {fileID: 4295472081081488544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f002925d6517714aacca126b84f774c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
