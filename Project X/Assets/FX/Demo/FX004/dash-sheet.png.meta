@@ -115,8 +115,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11a6e1753009c7044aab79243b646c5e
-      internalID: -88955831
+      spriteID: e21406707fdb75f42ae1043864be336e
+      internalID: 145099781
       vertices: []
       indices: 
       edges: []
@@ -135,10 +135,10 @@ TextureImporter:
       name: dash-sheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 160
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1187b9aaeb9fefd46a5260fdbe0b0465
-      internalID: 789433158
+      spriteID: 1849afb6baed96f46b0fad5cdc8e614c
+      internalID: 490030389
       vertices: []
       indices: 
       edges: []
@@ -157,10 +157,10 @@ TextureImporter:
       name: dash-sheet_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 320
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df929602abcf5a44cbcfdcc8cb19134d
-      internalID: -455471293
+      spriteID: 8d2f231606759bd46b09a99788fd7411
+      internalID: -2037210050
       vertices: []
       indices: 
       edges: []
@@ -179,10 +179,10 @@ TextureImporter:
       name: dash-sheet_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 480
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2795d7d9331700540a97fbe33c1c1037
-      internalID: 1139986562
+      spriteID: bff55ffc03cf1f946af86bb2c7188fcd
+      internalID: -853674403
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
       name: dash-sheet_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 640
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dc27221dca4a194d82a5c8ed34e3f3a
-      internalID: 1212416805
+      spriteID: 259c7ac4508fc2447baed33e09f48d0c
+      internalID: 530266068
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
       name: dash-sheet_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 800
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06211ccb79ce1714b9a6beeeb09c7505
-      internalID: 1724385755
+      spriteID: 9e8c10a3ea76f064c94a9f57d5188fd2
+      internalID: 506885786
       vertices: []
       indices: 
       edges: []
@@ -245,10 +245,10 @@ TextureImporter:
       name: dash-sheet_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 960
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a48b61b94d775b41b7a88ca20f75938
-      internalID: -2006065344
+      spriteID: e0f8b148ece461c4caf36a61166876d3
+      internalID: 1728992325
       vertices: []
       indices: 
       edges: []
@@ -267,10 +267,10 @@ TextureImporter:
       name: dash-sheet_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 1120
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4347ba64cafbe7d41bb04251e544144d
-      internalID: -8002341
+      spriteID: ee8596ab174ba404f9d244f2664ba2c8
+      internalID: -1691968334
       vertices: []
       indices: 
       edges: []
@@ -289,10 +289,10 @@ TextureImporter:
       name: dash-sheet_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 1280
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4bc3d670dba8fc47923922bcb6a205d
-      internalID: 879361820
+      spriteID: 57b33733fd2b3f348ad79b3f1d004cac
+      internalID: -757911113
       vertices: []
       indices: 
       edges: []
@@ -311,10 +311,10 @@ TextureImporter:
       name: dash-sheet_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 1440
         y: 0
-        width: 32
-        height: 32
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f463687b3a2561499dc851c148995cf
-      internalID: 1985987331
+      spriteID: 7ace421c94b129449a980f90d70c6ed0
+      internalID: 113133754
       vertices: []
       indices: 
       edges: []
@@ -333,7 +333,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7e727dc7928c40642bc8f363829b3c1b
+    spriteID: 1e0951e3f0713864aac7008992e83203
     internalID: 0
     vertices: []
     indices: 
@@ -343,18 +343,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":160.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      dash-sheet_0: -88955831
-      dash-sheet_1: 789433158
-      dash-sheet_2: -455471293
-      dash-sheet_3: 1139986562
-      dash-sheet_4: 1212416805
-      dash-sheet_5: 1724385755
-      dash-sheet_6: -2006065344
-      dash-sheet_7: -8002341
-      dash-sheet_8: 879361820
-      dash-sheet_9: 1985987331
+      dash-sheet_0: 145099781
+      dash-sheet_1: 490030389
+      dash-sheet_2: -2037210050
+      dash-sheet_3: -853674403
+      dash-sheet_4: 530266068
+      dash-sheet_5: 506885786
+      dash-sheet_6: 1728992325
+      dash-sheet_7: -1691968334
+      dash-sheet_8: -757911113
+      dash-sheet_9: 113133754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
