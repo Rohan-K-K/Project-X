@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: ac298b051f5c239499854c2c280cce69
+  - enabled: 1
     path: Assets/Scenes/AlleyScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SewerScene.unity
+    guid: 33ebb948a6b82e947876192fcb25b7db
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: f8b1e51b8053186438b0f17abaaa928c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
