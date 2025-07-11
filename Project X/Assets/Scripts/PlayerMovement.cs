@@ -66,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
     {
         //calculate which direction to move the player in
         Vector3 moveForce = moveDir.normalized * playerMoveSpd;
-        Debug.Log(moveForce);
         //add force to rigidbody to move player in desired direction
         playerRB.AddForce(moveForce, ForceMode.Force);
     

@@ -36,6 +36,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (onGridLoader)
         {
+            Debug.Log("Loading zone entered");
             LoadNewScene(sceneToLoad);
         }
     }

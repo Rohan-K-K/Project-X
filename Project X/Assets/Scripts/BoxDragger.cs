@@ -22,6 +22,7 @@ public class BoxDragger : MonoBehaviour
 
         //prevent box from rotating
         boxRB.constraints = RigidbodyConstraints.FreezeRotation;
+        boxRB.isKinematic = true;
     }
 
     void Update()
@@ -41,6 +42,8 @@ public class BoxDragger : MonoBehaviour
         {
             //unlock box constraints so it can be moved
             boxRB.constraints = RigidbodyConstraints.None;
+            boxRB.constraints = RigidbodyConstraints.FreezeRotation;
+            boxRB.isKinematic = false;
             //calculate how fast to push/pull the box and in what direction
             Vector3 moveDirection = player.GetMovementInput();
             Vector3 moveForce = moveDirection.normalized * boxPushSpd * 10f;
@@ -50,6 +53,7 @@ public class BoxDragger : MonoBehaviour
         else
         {
             //lock the box rigidbody if not being pushed to prevent unwanted movements
+            boxRB.isKinematic = true;
             boxRB.constraints = RigidbodyConstraints.FreezePosition;
         }
     }
