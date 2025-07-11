@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //TODO: add state handler instead of this segment
+        //TODO: may not need to implement state handler, if so, just replace playerMoveSpd with playerWalkSpd completely
+        //TODO: remove these lines once done optimizing movement
         playerMoveSpd = playerWalkSpd;
         playerRB.linearDamping = playerDragForce;
 
@@ -58,7 +60,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void movePlayer(Vector3 moveDir)
     {
+        //calculate which direction to move the player in
         Vector3 moveForce = moveDir.normalized * playerMoveSpd;
+        //add force to rigidbody to move player in desired direction
         playerRB.AddForce(moveForce, ForceMode.Force);
     }
 }
