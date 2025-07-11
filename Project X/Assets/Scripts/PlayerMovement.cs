@@ -5,20 +5,23 @@ public class PlayerMovement : MonoBehaviour
     [Header("Components")]
     public Rigidbody playerRB;
     public Transform playerBody;
+    public PlayerInputs inputs;
 
     [Header("Movement")]
     public float playerWalkSpd;
-
-    float playerMoveSpd;
+    public float playerDashSpd;
 
     [Header("Physics")]
     [SerializeField] float playerDragForce;
+
+    float playerMoveSpd;
 
     void Start()
     {
         //assign player components to correct variables
         playerBody = GetComponent<Transform>();
         playerRB = GetComponent<Rigidbody>();
+        inputs = GetComponent<PlayerInputs>();
 
         //configure player components properly
         playerRB.linearDamping = playerDragForce;
@@ -34,17 +37,18 @@ public class PlayerMovement : MonoBehaviour
         playerRB.linearDamping = playerDragForce;
 
         //get player inputs
-        Vector3 movementDireciton = getMovementInput();
+        Vector3 movementDireciton = GetMovementInput();
 
         //move player
-        movePlayer(movementDireciton);
+        MovePlayer(movementDireciton);
+        DashPlayer(movementDireciton);
     }
 
     /*
     Input scripts
     */
 
-    public Vector3 getMovementInput()
+    public Vector3 GetMovementInput()
     {
         //get acutal inputs from the player
         float xDir = Input.GetAxisRaw("Horizontal");
@@ -58,11 +62,24 @@ public class PlayerMovement : MonoBehaviour
     Movement Scripts
     */
 
-    public void movePlayer(Vector3 moveDir)
+    public void MovePlayer(Vector3 moveDir)
     {
         //calculate which direction to move the player in
         Vector3 moveForce = moveDir.normalized * playerMoveSpd;
+        Debug.Log(moveForce);
         //add force to rigidbody to move player in desired direction
         playerRB.AddForce(moveForce, ForceMode.Force);
+    
+    }
+
+    public void DashPlayer(Vector3 moveDir)
+    {
+        if (Input.GetKeyDown(inputs.dash))
+        {
+            //calculate which direction to move the player in
+            Vector3 moveForce = moveDir.normalized * playerDashSpd;
+            //add force to rigidbody to move player in desired direction
+            playerRB.AddForce(moveForce, ForceMode.Impulse);
+        }
     }
 }

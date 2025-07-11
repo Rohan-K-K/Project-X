@@ -42,7 +42,7 @@ public class BoxDragger : MonoBehaviour
             //unlock box constraints so it can be moved
             boxRB.constraints = RigidbodyConstraints.None;
             //calculate how fast to push/pull the box and in what direction
-            Vector3 moveDirection = player.getMovementInput();
+            Vector3 moveDirection = player.GetMovementInput();
             Vector3 moveForce = moveDirection.normalized * boxPushSpd * 10f;
             //push/pull the box
             boxRB.AddForce(moveForce, ForceMode.Force);
