@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public TriggerDetector enemyVision;
     public PlayerMovement player;
     public Rigidbody enemyRb;
+    public Transform enemyBody;
     public float enemyMoveSpd;
     public float enemyAttackStr;
     public bool enemyAggroed;
@@ -15,6 +16,7 @@ public class EnemyMovement : MonoBehaviour
     {
         enemyRb = GetComponent<Rigidbody>();
         enemyRb.constraints = RigidbodyConstraints.FreezeRotation;
+        enemyBody = GetComponent<Transform>();
         player = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
         enemyAggroed = false;
     }

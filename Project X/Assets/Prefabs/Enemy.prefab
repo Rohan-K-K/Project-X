@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7706022085605476586}
   - component: {fileID: 827259033601866687}
   - component: {fileID: 2544967843998537053}
-  - component: {fileID: 7054569997396971017}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -87,29 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7054569997396971017
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4143350137095237693}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5333485464872903162
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,9 +183,10 @@ GameObject:
   - component: {fileID: 4673880230197222277}
   - component: {fileID: 5156045794394869426}
   - component: {fileID: 8857620065783819542}
+  - component: {fileID: 7665885425401331147}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,9 +251,32 @@ MonoBehaviour:
   enemyVision: {fileID: 2680482636965737769}
   player: {fileID: 0}
   enemyRb: {fileID: 0}
-  enemyMoveSpd: 0
+  enemyMoveSpd: 10
   enemyAttackStr: 0
   enemyAggroed: 0
+--- !u!136 &7665885425401331147
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954211859324295475}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3099982284987222563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -415,4 +415,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerEntered: 0
-  playerDetector: 1
+  tagToDetect: Player
+  collisionObject: {fileID: 0}
