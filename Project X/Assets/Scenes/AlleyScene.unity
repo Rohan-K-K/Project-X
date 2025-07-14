@@ -459,6 +459,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773347753}
     m_Modifications:
+    - target: {fileID: 1744259220181750836, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c6a24edf55c2eb24ab8cfa077088e75e, type: 2}
     - target: {fileID: 5032714032293377520, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
       propertyPath: m_Name
       value: Trigger Box Left
@@ -805,7 +809,7 @@ Transform:
   m_GameObject: {fileID: 903556261}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 13.32, y: 1, z: -17.29}
+  m_LocalPosition: {x: 13.32, y: 1, z: -17.25}
   m_LocalScale: {x: 4.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1317,7 +1321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: fa4e3fc4bace44f6791a201629cc90d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1393,6 +1397,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773347753}
     m_Modifications:
+    - target: {fileID: 1744259220181750836, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c6a24edf55c2eb24ab8cfa077088e75e, type: 2}
     - target: {fileID: 5032714032293377520, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
       propertyPath: m_Name
       value: Trigger Box Right
@@ -1762,6 +1770,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1773347753}
     m_Modifications:
+    - target: {fileID: 1744259220181750836, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c6a24edf55c2eb24ab8cfa077088e75e, type: 2}
     - target: {fileID: 5032714032293377520, guid: a62fced8ca57c0b4c8b31fca88981bfd, type: 3}
       propertyPath: m_Name
       value: Trigger Box Mid
