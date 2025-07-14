@@ -17,12 +17,12 @@ public class PlayerCombat : MonoBehaviour
     {
     }
 
-    public void basicAttack()
+   /* public void basicAttack()
     {
         if (Input.GetMouseButtonDown(1))
         {
             Instantiate(swingAnimation, transform.position, transform.rotation);
             animator.Play(swingAnimation, -1, 0f);
         }
-    }
+    } */
 }
