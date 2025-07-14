@@ -196,10 +196,10 @@ MonoBehaviour:
   playerBody: {fileID: 0}
   inputs: {fileID: 0}
   playerWalkSpd: 24
-  playerDashSpd: 5
+  playerDashSpd: 3
   dashCooldown: 0
   dashDuration: 0
-  playerDragForce: 1
+  playerDragForce: 3
 --- !u!114 &9030470937254513124
 MonoBehaviour:
   m_ObjectHideFlags: 0
