@@ -3,26 +3,22 @@ using UnityEngine.AI;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public GameObject swingAnimation;
     public PlayerInputs inputs;
-
-    public Animator animator;
 
     public void Start()
     {
         inputs = GetComponent<PlayerInputs>();
+        inputs = GetComponent<PlayerInputs>();
     }
 
-    public void Update()
+    void OnTriggerStay(Collider other)
     {
-    }
-
-   /* public void basicAttack()
-    {
-        if (Input.GetMouseButtonDown(1))
+        if (other.CompareTag("Enemy") && Input.GetMouseButtonDown(0))
         {
-            Instantiate(swingAnimation, transform.position, transform.rotation);
-            animator.Play(swingAnimation, -1, 0f);
+            Debug.Log("Hit Enemy");
+            other.gameObject.SetActive(false);
         }
-    } */
+    }
+
+
 }
