@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c63f62a493c6e3f459533e35b736b050
+guid: 4a92f688b89dde34099bfab22c25caa3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Swing_0
+      name: Swing2_0
       rect:
         serializedVersion: 2
-        x: 192
+        x: 0
         y: 0
-        width: 192
-        height: 192
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 704611e2176368b4a98feb775d146b05
-      internalID: 216539149
+      spriteID: 9fe72a1e97abece428de75a70da08edb
+      internalID: 1244926598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swing_1
+      name: Swing2_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 512
         y: 0
-        width: 192
-        height: 192
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 969df5c7be6a6054cac5396df60f2cd7
-      internalID: -1913969811
+      spriteID: fea7b5b4086184e43abab205e66ab7b2
+      internalID: 442005242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swing_2
+      name: Swing2_2
       rect:
         serializedVersion: 2
-        x: 576
+        x: 1024
         y: 0
-        width: 192
-        height: 192
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,108 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95853594247ed4a49a60df7b366169f2
-      internalID: 562339689
+      spriteID: fecb42566fefe3a44bcb2c4155d3200f
+      internalID: -1833143564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swing_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e2b711baed48d943aca8ebfe3df2ecc
-      internalID: 765845499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Swing_4
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab0bf5d645dddd0478da500b19352f97
-      internalID: -434009276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Swing_5
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93acd963147b4064099d8bf4e4c2e13f
-      internalID: -1472019910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Swing_6
-      rect:
-        serializedVersion: 2
-        x: 1344
-        y: 0
-        width: 192
-        height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee8a18852423bb04b8d2dcd87d3ffbbb
-      internalID: 42303188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Swing_7
+      name: Swing2_3
       rect:
         serializedVersion: 2
         x: 1536
         y: 0
-        width: 192
-        height: 192
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +178,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4461dce7f5051c48aebdcd950fa3231
-      internalID: 10546905
+      spriteID: 19ef101d550eb8341b744f3a2d3d6b0e
+      internalID: -1161939241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swing2_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d1c35def6ceec41bc0d6f4483118d2
+      internalID: -2050217742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swing2_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e118eeb7150a4044094a466fcb47af27
+      internalID: -1640851069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swing2_6
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f15f5efed42ff4198ccf3a7c13a602
+      internalID: 737082143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swing2_7
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0f0fd03a7e74a44bb9cd7200a9ca87
+      internalID: -1595461856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swing2_8
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca6b197c70ca6d4db2c77d424787cd6
+      internalID: -1121592645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swing2_9
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4a7a14932a3064183332f19a864f04
+      internalID: 243202828
       vertices: []
       indices: 
       edges: []
@@ -276,7 +320,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6e37b148890c5724a800d7164274b5f0
+    spriteID: d75111fd1455b1d44b47cb33e2c16a7a
     internalID: 0
     vertices: []
     indices: 
@@ -286,16 +330,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":1.0},"gridSpriteSize":{"x":192.0,"y":192.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Swing_0: 216539149
-      Swing_1: -1913969811
-      Swing_2: 562339689
-      Swing_3: 765845499
-      Swing_4: -434009276
-      Swing_5: -1472019910
-      Swing_6: 42303188
-      Swing_7: 10546905
+      Swing2_0: 1244926598
+      Swing2_1: 442005242
+      Swing2_2: -1833143564
+      Swing2_3: -1161939241
+      Swing2_4: -2050217742
+      Swing2_5: -1640851069
+      Swing2_6: 737082143
+      Swing2_7: -1595461856
+      Swing2_8: -1121592645
+      Swing2_9: 243202828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
