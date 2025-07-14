@@ -194,7 +194,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRB: {fileID: 0}
   playerBody: {fileID: 0}
+  inputs: {fileID: 0}
   playerWalkSpd: 1.8
+  playerDashSpd: 5
+  dashCooldown: 0
+  dashDuration: 0
   playerDragForce: 1
 --- !u!114 &9030470937254513124
 MonoBehaviour:
@@ -209,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: 101
+  dash: 304
 --- !u!212 &6810529487331443795
 SpriteRenderer:
   m_ObjectHideFlags: 0

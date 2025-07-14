@@ -1161,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 1166930128}
     - target: {fileID: 4823050378961760325, guid: 6ca96cc125ba0b44ab063c400e38d8e2, type: 3}
       propertyPath: playerWalkSpd
-      value: 1.8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4823050378961760325, guid: 6ca96cc125ba0b44ab063c400e38d8e2, type: 3}
       propertyPath: playerDragForce
