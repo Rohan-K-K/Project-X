@@ -9,12 +9,21 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement")]
     public float playerWalkSpd;
+
+    [Header("Skills")]
     public float playerDashSpd;
+    public float dashCooldown;
+    public float dashDuration;
 
     [Header("Physics")]
     [SerializeField] float playerDragForce;
 
     float playerMoveSpd;
+
+    //logic
+    float timer;
+    bool dashReady;
+    bool playerDashing;
 
     void Start()
     {
@@ -26,6 +35,10 @@ public class PlayerMovement : MonoBehaviour
         //configure player components properly
         playerRB.linearDamping = playerDragForce;
         playerRB.freezeRotation = true;
+
+        //reset player skills
+        dashReady = true;
+        playerDashing = false;
     }
 
     void Update()
@@ -41,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         //move player
         MovePlayer(movementDireciton);
+        LimitPlayerSpd(playerRB.linearVelocity);
         DashPlayer(movementDireciton);
     }
 
@@ -71,14 +85,43 @@ public class PlayerMovement : MonoBehaviour
     
     }
 
+    public void LimitPlayerSpd(Vector3 originalVelocity)
+    {
+        if (originalVelocity.magnitude > playerWalkSpd && ! playerDashing)
+        {
+            Vector3 limitedSpd = originalVelocity.normalized * playerWalkSpd;
+            playerRB.linearVelocity= limitedSpd;
+        }
+    }
+
     public void DashPlayer(Vector3 moveDir)
     {
-        if (Input.GetKeyDown(inputs.dash))
+        if (Input.GetKeyDown(inputs.dash) && dashReady)
         {
             //calculate which direction to move the player in
             Vector3 moveForce = moveDir.normalized * playerDashSpd;
             //add force to rigidbody to move player in desired direction
             playerRB.AddForce(moveForce, ForceMode.Impulse);
+            dashReady = false;
+            playerDashing = true;
+            timer = 0;
+        }
+        else if (playerDashing)
+        {
+            resetDash();
+        }
+    }
+
+    public void resetDash()
+    {
+        timer += Time.deltaTime;
+        if (timer > dashCooldown)
+        {
+            dashReady = true;
+        }
+        if (timer > dashDuration)
+        {
+            playerDashing = false;
         }
     }
 }
