@@ -3,22 +3,26 @@ using UnityEngine.AI;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public PlayerInputs inputs;
+    [SerializeField] Animator playerAnimator;
+    public TriggerDetector attackHitBox;
+    public float playerAttack;
 
-    public void Start()
+    void Update()
     {
-        inputs = GetComponent<PlayerInputs>();
-        inputs = GetComponent<PlayerInputs>();
+        playerBasicAttack();
     }
 
-    void OnTriggerStay(Collider other)
+    public void playerBasicAttack()
     {
-        if (other.CompareTag("Enemy") && Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Hit Enemy");
-            other.gameObject.SetActive(false);
+            Debug.Log("Player Attacking");
+            playerAnimator.Play("Swing", 0);
+            if (attackHitBox.triggerEntered)
+            {
+                Debug.Log("Player Hit Enemy");
+                attackHitBox.collisionObject.GetComponent<EnemyMovement>().DamageEnemy(playerAttack);
+            }
         }
     }
-
-
 }

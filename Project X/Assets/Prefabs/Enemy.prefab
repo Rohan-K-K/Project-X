@@ -251,9 +251,11 @@ MonoBehaviour:
   enemyVision: {fileID: 2680482636965737769}
   player: {fileID: 0}
   enemyRb: {fileID: 0}
+  enemyBody: {fileID: 0}
   enemyMoveSpd: 10
   enemyAttackStr: 0
   enemyAggroed: 0
+  enemyHP: 10
 --- !u!136 &7665885425401331147
 CapsuleCollider:
   m_ObjectHideFlags: 0
