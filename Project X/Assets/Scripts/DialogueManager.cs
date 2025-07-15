@@ -11,13 +11,12 @@ public class DialogueManager : MonoBehaviour
     public PlayerInputs inputs;
     public int maxCharLength = 1;
 
-    bool playerInDialogue;
     List<string> textsToDisplay;
+    int dialogueIndex = 0;
 
     void Start()
     {
         inputs = GameObject.FindWithTag("Player").GetComponent<PlayerInputs>();
-        playerInDialogue = false;
         dialogueUI.SetActive(false);
         dialogueTextBox.text = "";
         textsToDisplay = SplitDialogueIntoLines(dialogueText);
@@ -26,24 +25,46 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        SetTextBoxText();
+        scrollDialogue();
+        endDialogue();
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(inputs.interact))
         {
             Time.timeScale = 0;
-            playerInDialogue = true;
             dialogueUI.SetActive(true);
-            ChangeTextBoxText(dialogueText);
         }
     }
 
-    void ChangeTextBoxText(string displayText)
+    void SetTextBoxText()
     {
-        dialogueTextBox.text = displayText;
+        dialogueTextBox.text = textsToDisplay[dialogueIndex];
     }
 
+    void scrollDialogue()
+    {
+        if (Input.GetKeyDown(inputs.interact) || Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        {
+            dialogueIndex += 1;
+        }
+    }
 
-    //does not split lines at words
+    void endDialogue()
+    {
+        if (dialogueIndex == textsToDisplay.Count)
+        {
+            Time.timeScale = 1;
+            dialogueUI.SetActive(false);
+        }
+    }
+
+    //TODO: does not split lines at words, only at characters
+    //TODO: switch to split at words once made
     List<string> SplitDialogueIntoLines(string textToSplit)
     {
         string remainingText = textToSplit;
@@ -57,8 +78,10 @@ public class DialogueManager : MonoBehaviour
             remainingText = remainingText.Substring(maxCharLength, remainingText.Length - maxCharLength);
             Debug.Log("Moving to next text segment.");
         }
-        Debug.Log(remainingText);
-        splitText.Add(remainingText);
+        if (remainingText.Length > 0)
+        {
+            splitText.Add(remainingText);
+        }
         Debug.Log("Text split successfully");
         return splitText;
     }
