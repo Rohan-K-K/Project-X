@@ -6,6 +6,8 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject dialogueUI;
+    public GameObject virtualPlayerCam;
+    public GameObject virtualDialogueCam;
     public string dialogueText;
     public TMP_Text dialogueTextBox;
     public PlayerInputs inputs;
@@ -36,7 +38,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(inputs.interact))
         {
-            Time.timeScale = 0;
+            virtualPlayerCam.SetActive(false);
+            virtualDialogueCam.SetActive(true);
             dialogueUI.SetActive(true);
         }
     }
@@ -61,6 +64,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (dialogueIndex == textsToDisplay.Count)
         {
+            virtualPlayerCam.SetActive(true);
+            virtualDialogueCam.SetActive(false);
             Time.timeScale = 1;
             dialogueUI.SetActive(false);
             dialogueIndex = -1;
