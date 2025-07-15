@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     public int maxCharLength = 1;
 
     List<string> textsToDisplay;
-    int dialogueIndex = 0;
+    int dialogueIndex = -1;
 
     void Start()
     {
@@ -43,7 +43,10 @@ public class DialogueManager : MonoBehaviour
 
     void SetTextBoxText()
     {
-        dialogueTextBox.text = textsToDisplay[dialogueIndex];
+        if (dialogueIndex > -1)
+        {
+            dialogueTextBox.text = textsToDisplay[dialogueIndex];
+        }
     }
 
     void scrollDialogue()
@@ -60,6 +63,7 @@ public class DialogueManager : MonoBehaviour
         {
             Time.timeScale = 1;
             dialogueUI.SetActive(false);
+            dialogueIndex = -1;
         }
     }
 
@@ -69,6 +73,11 @@ public class DialogueManager : MonoBehaviour
     {
         string remainingText = textToSplit;
         List<string> splitText = new List<string>();
+        if (remainingText.Length < maxCharLength)
+        {
+            Debug.Log("Dialogue under max character length. No line splitting is required, returning origional string");
+            return new List<string> { remainingText };
+        }
         Debug.Log("Starting Dialogue Text Spliting");
         while (remainingText.Length > maxCharLength)
         {
