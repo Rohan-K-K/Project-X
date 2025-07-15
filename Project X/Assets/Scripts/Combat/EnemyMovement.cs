@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     public float enemyMoveSpd;
     public float enemyAttackStr;
     public bool enemyAggroed;
+    public float enemyHP;
 
     public void Start()
     {
@@ -25,6 +26,7 @@ public class EnemyMovement : MonoBehaviour
     {
         IsEnemyAggroed();
         EnemyChasePlayer();
+        EnemyStatus();
     }
 
     public void IsEnemyAggroed()
@@ -43,5 +45,20 @@ public class EnemyMovement : MonoBehaviour
             Vector3 moveDir = player.playerBody.position - transform.position;
             enemyRb.AddForce(moveDir.normalized * enemyMoveSpd);
         }
-    }   
+    }
+
+    void EnemyStatus()
+    {
+        if (enemyHP <= 0f)
+        {
+            Destroy(gameObject);
+            Debug.Log("Enemy HP below zero. destroying enemy");
+        }
+    }
+
+    public void DamageEnemy(float damage)
+    {
+        enemyHP -= damage;
+        Debug.Log("Enemy took " + damage + " points of damage");
+    }
 }
